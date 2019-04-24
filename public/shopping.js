@@ -49,6 +49,10 @@ $(() => {
     $("#goto_cart").click(function(){
         document.location.href="Cart.html"
     })
+    
+    $("#logout").click(function(){
+        document.location.href="index.html"
+    })
 
     function refreshList(){
         $.get('/product', (data) => {

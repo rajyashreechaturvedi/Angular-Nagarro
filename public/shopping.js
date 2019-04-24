@@ -55,6 +55,7 @@ $(() => {
             $('#productlist').empty()
             $('#productlist').append(
                 `<tr>
+                <th>Product ID</th>
                 <th>Product Name</th>
                 <th>Price</th>
                 <th>Vendor</th>
@@ -64,6 +65,7 @@ $(() => {
             for(let prod of data){
                 $('#productlist').append(
                     `<tr>
+                    <td align=center>${prod.id}</td>
                     <td align=center>${prod.product_name}</td>
                     <td align=center>${prod.product_price}</td>
                     <td align=center>${prod.vendor_id}</td>
